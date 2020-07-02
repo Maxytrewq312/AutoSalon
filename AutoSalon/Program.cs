@@ -8,6 +8,7 @@ namespace AutoSalon
 {
     static class Program
     {
+        public static AutoSalonEntities ADb = new AutoSalonEntities();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,7 @@ namespace AutoSalon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Menu());
         }
     }
 }
